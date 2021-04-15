@@ -29,6 +29,6 @@ const TransactionHistory = ({ items }) => (
   </table>
 );
 
-export default TransactionHistory;
+// export default TransactionHistory;
 
 // dfsdfs
