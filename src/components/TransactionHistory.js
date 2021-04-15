@@ -2,8 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Transaction from './Transaction';
 
+const styles = {
+  outline: '1px solid green',
+  display: 'inline-block',
+};
+
 const TransactionHistory = ({ items }) => (
-  <table class="transaction-history">
+  <table class="transaction-history" style={styles}>
     <thead>
       <tr>
         <th>Type</th>
