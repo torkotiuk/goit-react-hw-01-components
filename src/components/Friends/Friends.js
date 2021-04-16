@@ -1,16 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import Friend from './Friend';
 
-const styles = {
-  outline: '1px solid green',
-  display: 'inline-block',
-};
+import styles from './Friends.module.css';
 
 const Friends = ({ friends }) => (
-  <ul style={styles}>
+  <ul className={styles.Friends__container}>
     {friends.map(item => (
-      <li key={item.id}>
+      <li className={styles.Friend__li} key={item.id}>
         <Friend
           isOnline={item.isOnline}
           avatar={item.avatar}

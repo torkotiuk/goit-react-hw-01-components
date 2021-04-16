@@ -1,9 +1,10 @@
-import React from 'react';
-import User from './components/User';
-import Statistics from './components/Statistics';
-import Friends from './components/Friends';
-import TransactionHistory from './components/TransactionHistory';
+// components
+import User from './components/User/User';
+import Statistics from './components/StatisticList/Statistics';
+import Friends from './components/Friends/Friends';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
+// JSON-s
 import userData from './JSON/user.json';
 import stats from './JSON/statistical-data.json';
 import friends from './JSON/friends.json';
@@ -18,7 +19,7 @@ const App = () => (
       avatar={userData.avatar}
       alt={userData.name}
       followers={userData.stats.followers}
-      viewers={userData.stats.viewers}
+      views={userData.stats.views}
       likes={userData.stats.likes}
     />
 
