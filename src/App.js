@@ -1,5 +1,5 @@
 // components
-import User from './components/User/User';
+import User from './components/User/index';
 import Statistics from './components/StatisticList/Statistics';
 import Friends from './components/Friends/Friends';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';

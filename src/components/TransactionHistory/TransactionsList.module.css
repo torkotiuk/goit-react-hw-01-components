@@ -11,10 +11,6 @@
   padding: 10px;
 }
 
-.transaction__td {
-  background-color: rgb(194, 194, 194);
-}
-
 .transaction__column {
   display: block;
   margin-left: 80px;
@@ -27,4 +23,12 @@
   display: block;
   text-align: center;
   margin: 0px 70px;
+}
+
+.transactionHistory__firstColor {
+  background-color: rgb(201, 221, 247);
+}
+
+.transactionHistory__secondColor {
+  background-color: rgb(236, 230, 255);
 }

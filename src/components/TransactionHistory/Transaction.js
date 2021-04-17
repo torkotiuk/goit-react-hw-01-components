@@ -3,13 +3,13 @@ import styles from './TransactionsList.module.css';
 
 const Transaction = ({ type, amount, currency, id }) => (
   <>
-    <td className={styles.transaction__td}>
+    <td>
       <span className={styles.transaction__column}>{type}</span>
     </td>
-    <td className={styles.transaction__td}>
+    <td>
       <span className={styles.transaction__amount}>{amount}</span>
     </td>
-    <td className={styles.transaction__td}>
+    <td>
       <span className={styles.transaction__currency}>{currency}</span>
     </td>
   </>

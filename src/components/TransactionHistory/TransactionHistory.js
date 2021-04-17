@@ -13,7 +13,14 @@ const TransactionHistory = ({ items }) => (
 
     <tbody>
       {items.map(item => (
-        <tr key={item.id}>
+        <tr
+          className={
+            items.indexOf(item) % 2 === 0
+              ? styles.transactionHistory__firstColor
+              : styles.transactionHistory__secondColor
+          }
+          key={item.id}
+        >
           <Transaction
             type={item.type}
             amount={item.amount}
